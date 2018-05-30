@@ -1,0 +1,11 @@
+docker run --rm=true \
+-v </absolute/path/to/mldb_data>:/mldb_data \
+-e MLDB_IDS="`id`" \
+-p 127.0.0.1:<mldbport>:80 \
+quay.io/mldb/mldb:latest
+
+docker run --rm=true \
+-v /Users/phaneendra/data/mldb_data:/mldb_data \
+-e MLDB_IDS="`id`" \
+-p 127.0.0.1:7979:80 \
+quay.io/mldb/mldb:latest
