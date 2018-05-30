@@ -1,0 +1,57 @@
+List all dockers containers:
+docker ps -a
+
+List docker containers currently running:
+docker ps
+
+Stop a container:
+docker stop <containerId>
+
+Remove a container:
+docker rm <containerId>
+
+Remove all stopped containers:
+docker container prune
+
+To build a docker file as image:
+docker build -t <name> <path_to_docker_file>
+eg: docker build -t demo_image .
+
+To run a docker Container:
+docker run
+	-p <portHost>:<portContainer>
+	-v <path/of/files>:<path/in/container> (Sync host fs to container fs)
+	-it                          (interactive,tty)
+	--rm (Starts fresh removes old files)
+	--name
+	<image-name>
+
+eg: docker run -p 8080:8081 -v /opt/usr:/usr/app -it --name demo_container demo_image
+eg: docker run -p 8080:8081 -v $(pwd)/mysql:/tmp -it --name demo_container demo_image
+
+
+List all images:
+docker images
+
+Show Untagger Images:
+docker images --filter "dangling=true"
+
+Delete Untagged Images:
+docker rmi $(docker images -f "dangling=true" -q)
+
+Remove a Image:
+docker rmi imageId
+
+To connect to a running container:
+docker attach demo_container
+
+Create a network:
+docker network create engine_app_net
+(or)
+docker network create --subnet=172.18.0.0/16 engine_app_net
+To assign a ip while running a container
+docker run --net engine_app_net --ip 172.18.0.22 -it ubuntu bash
+
+
+Connect to a docker image bash
+$ docker run -it <image> /bin/bash
