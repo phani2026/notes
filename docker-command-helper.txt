@@ -53,5 +53,5 @@ To assign a ip while running a container
 docker run --net engine_app_net --ip 172.18.0.22 -it ubuntu bash
 
 
-Connect to a docker image bash
+To browse a linux docker fs image 
 $ docker run -it <image> /bin/bash
