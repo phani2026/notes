@@ -7,3 +7,13 @@ docker run -d --name sonarqube \
     -e SONARQUBE_JDBC_PASSWORD=sonar \
     -e SONARQUBE_JDBC_URL=jdbc:postgresql://localhost/sonar \
     sonarqube
+
+Simple Run: Inbuilt db
+docker run -d --name sonarqube -p 9000:9000 -p 9002:9092 sonarqube
+
+
+Command to run sonar:
+mvn sonar:sonar   -Dsonar.host.url=https://sonar.razorthink.net   -Dsonar.login=e141093284e3bdc16d61cd8ca02548316a41346b -Dsonar.projectName=Bigbrain-Engine
+
+
+Plugins required:
