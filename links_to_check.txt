@@ -1,0 +1,10 @@
+https://github.com/apachecn/MachineLearning
+https://github.com/apachecn/MachineLearning/blob/master/docs/1.%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.md
+https://github.com/apachecn/MachineLearning/blob/master/docs/1.%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E5%9F%BA%E7%A1%80.md
+https://github.com/home-assistant/home-assistant
+https://www.home-assistant.io/
+https://stackoverflow.com/questions/2131935/automatic-generation-of-unit-tests-for-java
+
+**IMP:
+https://github.com/rootsongjc/kubernetes-handbook
+https://github.com/PipelineAI/pipeline
