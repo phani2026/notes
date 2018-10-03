@@ -2,3 +2,9 @@ https://github.com/home-assistant/home-assistant
 
 
 https://www.deeplearning.ai/
+
+
+https://github.com/TheAlgorithms/Python
+https://github.com/donnemartin/system-design-primer
+https://github.com/apachecn/awesome-algorithm
+https://github.com/Snailclimb/JavaGuide
