@@ -12,3 +12,11 @@ https://github.com/Snailclimb/JavaGuide
 
 Dockers for deeplearning
 https://github.com/ufoym/deepo
+
+
+Pyspark tutorial:
+https://github.com/awantik/pyspark-tutorial
+
+Cosmos algoritms:
+https://github.com/OpenGenus/cosmos
+https://github.com/kennyledet/Algorithm-Implementations
