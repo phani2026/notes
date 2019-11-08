@@ -8,3 +8,7 @@ https://stackoverflow.com/questions/2131935/automatic-generation-of-unit-tests-f
 **IMP:
 https://github.com/rootsongjc/kubernetes-handbook
 https://github.com/PipelineAI/pipeline
+
+
+
+https://becominghuman.ai/cheat-sheets-for-ai-neural-networks-machine-learning-deep-learning-big-data-678c51b4b463
