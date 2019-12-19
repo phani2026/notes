@@ -4,3 +4,16 @@ MARK - traverse live object graph to mark reachable objects
 SWEEP - scans memory to find unmarked memory
 COMPACT - relocating marked objects to defragment free memory
 When relocating objects in the heap, the JVM should correct all references to this object. During the relocation process the object graph is inconsistent, that is why STW pause is required.
+
+
+
+
+
+Stop the world 
+
+Island of isolation [IOI]
+
+Serial Collector, 
+Concurrent Collector,
+Parallel Collector,
+
