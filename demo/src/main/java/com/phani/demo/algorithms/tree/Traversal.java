@@ -1,5 +1,7 @@
 package com.phani.demo.algorithms.tree;
 
+import java.util.ArrayDeque;
+import java.util.Queue;
 import java.util.Stack;
 
 /**
@@ -139,6 +141,144 @@ public class Traversal {
 
     }
 
+    void leftViewUtil(Node node, int level)
+    {
+        int max_level = 0;
+        // Base Case
+        if (node == null)
+            return;
+
+        // If this is the first node of its level
+        if (max_level < level) {
+            System.out.print(" " + node.key);
+            max_level = level;
+        }
+
+        // Recur for left and right subtrees
+        leftViewUtil(node.left, level + 1);
+        leftViewUtil(node.right, level + 1);
+    }
+
+    void printLevelOrder(Node root)
+    {
+        int h = height(root);
+        int i;
+        for (i=1; i<=h; i++)
+            printGivenLevel(root, i);
+    }
+
+    int height(Node root)
+    {
+        if (root == null)
+            return 0;
+        else
+        {
+            /* compute  height of each subtree */
+            int lheight = height(root.left);
+            int rheight = height(root.right);
+
+            /* use the larger one */
+            if (lheight > rheight)
+                return(lheight+1);
+            else return(rheight+1);
+        }
+    }
+
+    void printGivenLevel (Node root ,int level)
+    {
+        if (root == null)
+            return;
+        if (level == 1)
+            System.out.println(root.key + " ");
+        else if (level > 1)
+        {
+            printGivenLevel(root.left, level-1);
+            printGivenLevel(root.right, level-1);
+        }
+    }
+
+    public void leftView(Node root)
+    {
+        if (root == null) {
+            return;
+        }
+
+        // create an empty queue and enqueue root node
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.add(root);
+
+        // pointer to store current node
+        Node curr;
+
+        // run till queue is not empty
+        while (!queue.isEmpty())
+        {
+            // calculate number of nodes in current level
+            int size = queue.size();
+            int i = 0;
+
+            // process every node of current level and enqueue their
+            // non-empty left and right child to queue
+            while (i++ < size) {
+                curr = queue.poll();
+
+                // if this is first node of current level, print it
+                if (i == 1) {
+                    System.out.print(curr.key + " ");
+                }
+
+                if (curr.left != null) {
+                    queue.add(curr.left);
+                }
+
+                if (curr.right != null) {
+                    queue.add(curr.right);
+                }
+            }
+        }
+    }
+
+    public void rightView(Node root)
+    {
+        if (root == null) {
+            return;
+        }
+
+        // create an empty queue and enqueue root node
+        Queue<Node> queue = new ArrayDeque<>();
+        queue.add(root);
+
+        // pointer to store current node
+        Node curr;
+
+        // run till queue is not empty
+        while (!queue.isEmpty())
+        {
+            // calculate number of nodes in current level
+            int size = queue.size();
+            int i = 0;
+
+            // process every node of current level and enqueue their
+            // non-empty left and right child to queue
+            while (i++ < size) {
+                curr = queue.poll();
+
+                // if this is first node of current level, print it
+                if (i == size) {
+                    System.out.print(curr.key + " ");
+                }
+
+                if (curr.left != null) {
+                    queue.add(curr.left);
+                }
+
+                if (curr.right != null) {
+                    queue.add(curr.right);
+                }
+            }
+        }
+    }
+
 
 
     public static void main(String[] args) {
@@ -152,6 +292,24 @@ public class Traversal {
         tree.printPostOrderIter(tree.root);
         System.out.println("");
         tree.printPostOrderRec(tree.root);
+
+        System.out.println("");
+
+        tree.leftViewUtil(tree.root, 1);
+
+        System.out.println("");
+
+        tree.printLevelOrder(tree.root);
+
+        System.out.println("");
+
+        tree.leftView(tree.root);
+
+        System.out.println("");
+
+        tree.rightView(tree.root);
+
+
     }
 
 
