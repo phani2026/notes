@@ -10,7 +10,6 @@ public class DemoApplication {
 
 		System.out.println("_______");
 		System.out.println(args.length);
-		System.out.println(args[0]);
 		System.out.println("_________________");
 		SpringApplication.run(DemoApplication.class, args);
 	}

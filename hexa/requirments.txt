@@ -1,0 +1,10 @@
+sqlalchemy
+pyzmq
+python-multipart
+pandas
+uvicorn
+starlette
+fastapi
+pydantic
+scipy
+singleton_decorator

@@ -1,5 +1,8 @@
 package com.phani.demo.algorithms;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
@@ -83,4 +86,22 @@ public class Solution {
 
 
     }
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj == null) {
+            return false;
+        }
+        if (obj == this) {
+            return true;
+        }
+        if (obj.getClass() != getClass()) {
+            return false;
+        }
+        Solution rhs = (Solution) obj;
+        return new EqualsBuilder()
+                .isEquals();
+    }
+
 }
