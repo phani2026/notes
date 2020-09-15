@@ -1,0 +1,10 @@
+{
+  "13423eb0-2398-9b1b-d3af-8857bea5613f": {
+    "TableParams": "{\n  \"schema\": {\n    \"key\": \"datatype\"\n  },\n  \"field_delimiter\": \",\",\n  \"table_location\": \"/user/cloudera/test3\",\n  \"truncate\": false,\n  \"compression\": \"\",\n  \"partition_col\": \"\",\n  \"overwrite\": true,\n  \"external\": true,\n  \"drop\": false,\n  \"queue\": \"\",\n  \"partition_size\": \"\",\n  \"format\": \"\",\n  \"table_name\": \"table_1\",\n  \"line_delimiter\": \"\\n\"\n}",
+    "ConnectionParameters": "{\n  \"port\": \"50070\",\n  \"auth_mechanism\": \"GSSAPI\",\n  \"useSSL\": false,\n  \"databaseName\": \"bdp\",\n  \"https\": false,\n  \"hivePort\": \"10000\",\n  \"authName\": \"hive_new\",\n  \"hostName\": \"quickstart.cloudera\",\n  \"username\": \"phani\",\n  \"hiveHost\": \"quickstart.cloudera\",\n  \"kerberos\": true\n}"
+  },
+  "6f2a473b-ad3b-e1cb-ed75-7f6f41f09e64": {
+    "AdditionalParams": "{\n    \"populateMetaSchema\": true,\n    \"startOffset\": 0,\n    \"endOffset\": 0,\n    \"columnsToSelect\": []\n, \"headers\": [\"COL1\", \"COL2\", \"COL3\"], \"filterExpression\": \"\"\n }",
+    "DataSource": "{\n  \"path\": \"/bigbrain/data/aggregate/agg_match_stats_0.csv\",\n  \"fileInZip\": \"file name inside zip file, only if above file path is zip\",\n  \"delimiter\": \",\",\n  \"ignoreAndContinue\": true,\n  \"calculateColumnSize\": true,\n  \"maxReadLines\": -1,\n  \"hasHeader\": true,\n  \"userProvidedSchema\": false\n}"
+  }
+}
