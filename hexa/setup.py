@@ -19,7 +19,7 @@ setup(
         'uvicorn==0.11.3',
         'starlette==0.13.2',
         'fastapi==0.53.2',
-        'pydantic==1.4',
+        'pydantic==1.6.2',
         'python-multipart==0.0.5',
         'singleton_decorator==1.0.0',
         'cloudpickle>=1.3.0'
