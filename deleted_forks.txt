@@ -5,3 +5,34 @@ https://github.com/soulmachine/machine-learning-cheat-sheet
 
 https://github.com/kdn251/interviews
 
+https://github.com/kdn251/interviews
+
+https://github.com/vitalysim/Awesome-Hacking-Resources
+
+https://github.com/goabstract/Marketing-for-Engineers
+
+https://github.com/mtdvio/every-programmer-should-know
+
+*https://github.com/OpenGenus/cosmos
+
+
+https://github.com/rasbt/python-machine-learning-book
+
+https://github.com/academic/awesome-datascience
+
+https://github.com/cmusatyalab/openface
+
+https://github.com/anu0012/awesome-computer-science-opportunities
+
+https://github.com/xiaoningning/java-algorithm-2010
+https://github.com/luyee/SparkInternals
+https://github.com/donnemartin/data-science-ipython-notebooks
+https://github.com/iluwatar/java-design-patterns
+
+https://github.com/aymericdamien/TopDeepLearning
+
+
+
+
+
+
