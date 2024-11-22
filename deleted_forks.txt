@@ -1,2 +1,7 @@
 
+https://github.com/datasciencemasters/go
+
+https://github.com/soulmachine/machine-learning-cheat-sheet
+
+https://github.com/kdn251/interviews
 
