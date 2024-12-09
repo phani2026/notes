@@ -16,7 +16,7 @@ setup(
     install_requires=[
         'sqlalchemy==1.3.15',
         'pyzmq==19.0.0',
-        'uvicorn==0.11.3',
+        'uvicorn==0.11.7',
         'starlette==0.13.2',
         'fastapi==0.53.2',
         'pydantic==1.4',
