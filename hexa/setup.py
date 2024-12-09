@@ -18,7 +18,7 @@ setup(
         'pyzmq==19.0.0',
         'uvicorn==0.11.3',
         'starlette==0.13.2',
-        'fastapi==0.53.2',
+        'fastapi==0.65.2',
         'pydantic==1.4',
         'python-multipart==0.0.5',
         'singleton_decorator==1.0.0',
